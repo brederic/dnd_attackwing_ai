@@ -1,5 +1,5 @@
 // ***************************************************************************
-// X-Wing Miniatures AI - Javascript
+// DnD Attack Wing AI - Javascript
 
 // ****************************************************************************
 //Credits https://www.myfreetextures.com/worn-parchment-paper-5/
@@ -156,14 +156,14 @@ function display_ship_choice( faction, funct )
 
     data += '<label>\n';
     data += '    <div title="Evil">'
-    data += '       <input type="radio" onclick="display_ship_choice(\'empire\', \'' + funct + '\')" hidden >'
+    data += '       <input type="radio" onclick="display_ship_choice(\'evil\', \'' + funct + '\')" hidden >'
     data += '       <img class="faction_button" src="img/color-evil.png" />'
     data += '    </div>'
     data += '</label>\n';
 
     data += '<label>\n';
     data += '    <div title="Good">'
-    data += '       <input type="radio" onclick="display_ship_choice(\'rebel\', \'' + funct + '\')" hidden >'
+    data += '       <input type="radio" onclick="display_ship_choice(\'good\', \'' + funct + '\')" hidden >'
     data += '        <img class="faction_button" src="img/color-good.png" />'
     data += '    </div>'
     data += '</label>\n';
@@ -172,7 +172,7 @@ function display_ship_choice( faction, funct )
 
     data += '<label>\n';
     data += '    <div title="Neutral">'
-    data += '       <input type="radio" onclick="display_ship_choice(\'scum\', \'' + funct + '\')" hidden >'
+    data += '       <input type="radio" onclick="display_ship_choice(\'neutral\', \'' + funct + '\')" hidden >'
     data += '        <img class="faction_button" src="img/color-neutral.png" />'
     data += '    </div>'
     data += '</label>\n';
@@ -455,14 +455,14 @@ function format_actions( ship )
 function load_index()
 {
     set_ship(0);
-    display_ship_choice( "empire", "set_ship" );
+    display_ship_choice( "evil", "set_ship" );
 }
 
 
 function load_ships()
 {
     display_ship(0);
-    display_ship_choice( "empire", "display_ship" );
+    display_ship_choice( "evil", "display_ship" );
 }
 
 

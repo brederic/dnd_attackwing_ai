@@ -7,7 +7,7 @@ body
 	background: beige;
 	background-image: url('img/parchment.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	color: black;
 }
 

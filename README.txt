@@ -1,15 +1,15 @@
 ==========================================
    DnD Attack Wing: Unit AI
 
-                  v0.5.0
+                  v0.5.1
 ==========================================
 
 -------------------
 Standard Disclaimer
 -------------------
 
-Star Wars and all associated elements are � 2015 Lucasfilm Ltd. & TM. All rights reserved.
-Fantasy Flight Games and the FFG logo are trademarks of Fantasy Flight Publishing, Inc.
+Dungeons and Dragons and all associated elements are © Wizards of the Coast & TM. All rights reserved.
+Wizkids, the Wizkids logo and DnD Attack Wing Game are trademarks of Wizkids, Inc.
 
 You use this software at your own risk, the authors are not responsible for any loss or damage resulting from the use of this software. If you do not agree with these terms do not use this software, simple.
 
@@ -31,7 +31,8 @@ Click the "?" button for detailed instruction on using the application
 --------------
 Change History
 --------------
-02/25/2020	0.5.0	
+02/25/2020  0.5.1	Removed all references to Star Wars and Fantasy Flight
+02/25/2020	0.5.0	Added legal text; cleaned up files and initial commit to github
 02/23/2020  0.4.0	Added units: Chuth, Ulharos, Borion; improved UI
 02/22/2020	0.3.0	Added units: Ulhuros, Deva Angel, Harpy, Wyvern; improved UI
 02/21/2020	0.1.0	Added dragons from starter to see how challenging it would be to implement Attack Wing units

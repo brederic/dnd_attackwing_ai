@@ -1,27 +1,27 @@
 <!DOCTYPE XHTML>
 <html>
 <head>
-<title>X-Wing Miniatures AI</title>
+<title>DnD Attack Wing AI</title>
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<script src="src/xwing_ai.js"></script>
-<script src="src/xwing_ships.js"></script>
+<script src="src/attackwing_ai.js"></script>
+<script src="src/attackwing_units.js"></script>
 </head>
 <body onload=load_index()>
 <div id="header">
 	<div id="logos">
-		<img class=company_logo src="img/wizkidslogo.png" alt="Fantasy Flight Games">
-		<img class=game_logo src="img/attack_wing.png" alt="StarWars: X-Wing Minitures">
+		<img class=company_logo src="img/wizkidslogo.png" alt="Wizkids">
+		<img class=game_logo src="img/attack_wing.png" alt="DnD Attack Wing">
 		<img class=applet_logo src="img/applet_logo.png" alt="AI">
 	</div>
 	<div id="links">
 		<div id="version"></div><br>
 		<a href="help.htm"><img class=help_icon src="img/help.png" alt="help"></a>
 		<a href="info.htm"><img class=info_icon src="img/info.png" alt="info"></a>
-		<a href="ships.htm"><img class=ships_icon src="img/ships.png" alt="ships"></a>
+		<a href="units.htm"><img class=ships_icon src="img/units.png" alt="ships"></a>
 	</div>
 </div>
 
@@ -34,13 +34,13 @@
 <div class="label">Select Target Location</div><br>
 	<!-- NOTE: Do no add line feed or images will not be flush -->
 	<div class="direction_grid">
-		<input id="target7" type="image" onclick="movement(DIR_315)" src="img/empire7.png" /><input id="target0" type="image" onclick="movement(DIR_000)" src="img/empire0.png" /><input id="target1" type="image" onclick="movement(DIR_045)" src="img/empire1.png" />
+		<input id="target7" type="image" onclick="movement(DIR_315)" src="img/evil7.png" /><input id="target0" type="image" onclick="movement(DIR_000)" src="img/evil0.png" /><input id="target1" type="image" onclick="movement(DIR_045)" src="img/evil1.png" />
 	</div>
 	<div class="direction_grid">
-		<input id="target6" type="image" onclick="movement(DIR_270)" src="img/empire6.png" /><img id="ship_image" src="img/tie.png"><input id="target2" type="image" onclick="movement(DIR_090)" src="img/empire2.png" />
+		<input id="target6" type="image" onclick="movement(DIR_270)" src="img/evil6.png" /><img id="ship_image" src="img/abd.png"><input id="target2" type="image" onclick="movement(DIR_090)" src="img/evil2.png" />
 	</div>
 	<div class="direction_grid">
-		<input id="target5" type="image" onclick="movement(DIR_225)" src="img/empire5.png" /><input id="target4" type="image" onclick="movement(DIR_180)" src="img/empire4.png" /><input id="target3" type="image" onclick="movement(DIR_135)" src="img/empire3.png" />
+		<input id="target5" type="image" onclick="movement(DIR_225)" src="img/evil5.png" /><input id="target4" type="image" onclick="movement(DIR_180)" src="img/evil4.png" /><input id="target3" type="image" onclick="movement(DIR_135)" src="img/evil3.png" />
 	</div>
 	<div class="ship_name" id="ship_name">
 	</div>
@@ -89,7 +89,7 @@
 <hr>
 Dungeons and Dragons and all associated elements are &copy; Wizards of the Coast & TM. All rights reserved.<br>
 Wizkids, the Wizkids logo and DnD Attack Wing Game are trademarks of Wizkids Publishing, Inc.<br>
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />DnD Attack Wing AI is an adaptation by <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:brederic@gmail.com" property="cc:attributionName" rel="cc:attributionURL">Brent Paschall</a> of the excellent <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">X-Wing Miniatures AI</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:rberrett4@gmail.com" property="cc:attributionName" rel="cc:attributionURL">Ralph Berrett</a> and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />DnD Attack Wing AI is an adaptation by <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:brederic@gmail.com" property="cc:attributionName" rel="cc:attributionURL">Brent Paschall</a> of the excellent <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">DnD Attack Wing AI</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="mailto:rberrett4@gmail.com" property="cc:attributionName" rel="cc:attributionURL">Ralph Berrett</a> and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
 </div>
 </body>
