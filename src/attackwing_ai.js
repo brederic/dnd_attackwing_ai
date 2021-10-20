@@ -25,11 +25,11 @@ var FAR = "Out of Range";           // Far
 var STRESSED = "Stressed";          // Stressed
 
 // ACTIONS
-var TARGET_LOCK = 0x1;
-var BARREL_ROLL = 0x2;
-var BOOST       = 0x4;
-var FOCUS       = 0x8;
-var EVADE       = 0x10;
+var TARGET = 0x1;
+var FEINT = 0x2;
+var CHARGE       = 0x4;
+var CONCENTRATE       = 0x8;
+var DODGE       = 0x10;
 var CLOAKING    = 0x20;
 var SLAM        = 0x40;
 var ROTATE_ARC  = 0x80;
@@ -71,7 +71,7 @@ var RECOVER_TEXT = "RECOVER";            // TODO
 var REINFORCE_TEXT = "REINFORCE";        // TODO
 
 // SHIPS array and currently selected SHIP (re-defined in separate js file)
-var ships = [];
+var creatures = [];
 var SHIP = {};
 
 
@@ -105,8 +105,21 @@ function TR( distance ) {
     return new Maneuver("turn-right", distance);
 }
 
-function K( distance ) {
-    return new Maneuver("koiogran", distance);
+function W( distance ) {
+    return new Maneuver("wingover", distance);
+}
+
+function PH( distance ) {
+    return new Maneuver("pivot-hold", distance);
+}
+function PR( distance ) {
+    return new Maneuver("pivot-right", distance);
+}
+function PL( distance ) {
+    return new Maneuver("pivot-left", distance);
+}
+function PRV( distance ) {
+    return new Maneuver("pivot-reverse", distance);
 }
 
 function SLL( distance ) {
@@ -179,10 +192,10 @@ function display_ship_choice( faction, funct )
 
     data += '<b>AI Unit:</b><br>';
 
-    for( idx=0; idx < ships.length; idx++ )
+    for( idx=0; idx < creatures.length; idx++ )
     {
         // only add buttons for ships for the selected faction
-        if( ships[idx].faction == faction )
+        if( creatures[idx].faction == faction )
         {
             // run the selected function on the first faction ship found
             if( shown == 0 )
@@ -195,9 +208,9 @@ function display_ship_choice( faction, funct )
             funct_args = funct + "(" + idx + ")";
 
             data += '<label>\n';
-            data += '    <div title="' + ships[idx].name + '">'
+            data += '    <div title="' + creatures[idx].name + '">'
             data += '       <input type="radio" onclick="' + funct_args + '" hidden />'
-            data += '       <img class="ship_button" src="' + ships[idx].image + '" />'
+            data += '       <img class="ship_button" src="' + creatures[idx].image + '" />'
             data += '    </div>'
             data += '</label>\n';
 
@@ -239,7 +252,7 @@ function gen_maneuver_table( name, table )
 function display_ship( ship_id )
 {
     // Set the global to the selected ship
-    SHIP = ships[ ship_id ];
+    SHIP = creatures[ ship_id ];
     if (SHIP === undefined ) {
     	var error = "<div><p>Unable to get ship(" + ship_id + ")</div>";
     	document.getElementById( "table" ).innerHTML( error );
@@ -274,7 +287,7 @@ function set_version()
 function set_ship( ship_id )
 {
     // Set the global to the selected ship
-    SHIP = ships[ ship_id ];
+    SHIP = creatures[ ship_id ];
     if (SHIP === undefined ) {
     	document.getElementById('ship_name').innerHTML = "<br>Unknown Ship: " + ship_id;
     	return;
@@ -374,26 +387,26 @@ function format_actions( ship )
 {
     var actions = "<ol>";
 
-    if( ship.actions & TARGET_LOCK )
+    if( ship.actions & TARGET )
     {
         actions += "<li>" + TARGET_LOCK_TEXT + "</li>";
     }
 
-    if( ship.actions & BARREL_ROLL )
+    if( ship.actions & FEINT )
     {
         actions += "<li>" + BARREL_ROLL_TEXT1 + "</li>";
         actions += "<li>" + BARREL_ROLL_TEXT2 + "</li>";
     }
 
-    if( ship.actions & BOOST )
+    if( ship.actions & CHARGE )
     {
         actions += "<li>" + BOOST_TEXT1 + "</li>";
         actions += "<li>" + BOOST_TEXT2 + "</li>";
     }
 
-    if( ship.actions & FOCUS )
+    if( ship.actions & CONCENTRATE )
     {
-        if( ship.actions & EVADE )
+        if( ship.actions & DODGE )
         {
             actions += "<li>" + FOCUS_TEXT1 + "</li>";
         }
@@ -403,7 +416,7 @@ function format_actions( ship )
         }
     }
 
-    if( ship.actions & EVADE )
+    if( ship.actions & DODGE )
     {
         actions += "<li>" + EVADE_TEXT + "</li>";
     }
