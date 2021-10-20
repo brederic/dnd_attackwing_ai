@@ -265,6 +265,58 @@ ybd.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3
 ybd.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
 ybd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(3) ];
 
+// ****************************************************************************
+//  Young Black Dragon
+
+var ykd = {};
+ykd.name = "Young Black Dragon";
+ykd.image = "img/ykd.png";
+ykd.faction = "evil";
+ykd.simple = [ F(1), F(2), BL(1), BR(1) ];
+ykd.normal = [ K(1), R(1), BL(2), BR(2), TL(2), TR(2),  BL(3), F(3), BR(3) ];
+ykd.difficult = [ K(3), F(4) ];
+ykd.actions = (TARGET_LOCK  + BARREL_ROLL + EVADE);
+
+ykd.closing = [];
+ykd.closing[0] = [ R(1), R(1), F(1), F(1), F(1), F(2), F(2), F(2), K(1), K(3) ];
+ykd.closing[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+ykd.closing[2] = [ TR(2), TR(2), TR(2), TR(2), BR(3), BR(3), R(1), TR(2), K(3), K(3) ];
+ykd.closing[3] = [ K(1), TR(2), TR(2), TR(2), TR(2), R(1), TR(2), TR(2), K(3), K(3) ];
+ykd.closing[4] = [ TL(2), F(4), TR(2), K(1), K(1), K(1), K(3), K(3), K(3), K(3) ];
+ykd.closing[5] = [ K(1), TL(2), TL(2), TL(2), TL(2), R(1), TL(2), TL(2), K(3), K(3) ];
+ykd.closing[6] = [  TL(2), TL(2), TL(2), TL(2), BL(3), BL(3), R(1), TL(2), K(3), K(3) ];
+ykd.closing[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+
+ykd.away = [];
+ykd.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+ykd.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), BR(3) ];
+ykd.away[2] = [ BR(2), BR(3), BR(3), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+ykd.away[3] = [ TR(2), TR(2), TR(2), K(1), K(1), K(1), TR(2), K(3), K(3), K(3) ];
+ykd.away[4] = [ TL(2), TR(2), K(1), K(1), K(1), K(1), K(3), K(3), K(3), K(3) ];
+ykd.away[5] = [ TL(2), TL(2), TL(2), K(1), K(1), K(1), TL(2), K(3), K(3), K(3) ];
+ykd.away[6] = [ BL(2), BL(3), BL(3), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+ykd.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), BL(3)  ];
+
+ykd.far = [];
+ykd.far[0] = [ BL(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4), BR(3) ];
+ykd.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), F(4) ];
+ykd.far[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), BR(3), BR(3) ];
+ykd.far[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), K(1), K(1), K(3), K(3) ];
+ykd.far[4] = [ TL(2), TL(2), K(1), K(3), TR(2), TR(2), K(3), K(1), K(3), K(3) ];
+ykd.far[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), K(1), K(1), K(3), K(3)];
+ykd.far[6] = [TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), BL(3), BL(3) ];
+ykd.far[7] = [BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), F(4)  ];
+
+ykd.stressed = [];
+ykd.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(3), R(1) ];
+ykd.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), BR(3) ];
+ykd.stressed[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), BR(3), TR(2) ];
+ykd.stressed[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), K(1), K(1), K(1), K(1), K(1) ];
+ykd.stressed[4] = [ TL(2), TL(2), TL(2), R(1), K(1), K(1), TR(2), TR(2), K(1), K(1) ];
+ykd.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), K(1), K(1), K(1), K(1), K(1) ];
+ykd.stressed[6] = [  TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), BL(3), TL(2) ];
+ykd.stressed[7] = [  F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), BL(3) ];
+
 //****************************************************************************
 //  Griffon
 
@@ -421,6 +473,58 @@ sarpiel.stressed[5] = [ TL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), 
 sarpiel.stressed[6] = [ BL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), TL(3), TL(3) ];
 sarpiel.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3), TL(3) ];
 
+// ****************************************************************************
+// air_elemental
+
+var air_elemental = {};
+air_elemental.name = "Air Elemental";
+air_elemental.image = "img/air_elemental.png";
+air_elemental.faction = "neutral";
+air_elemental.simple = [ F(1), F(2), BL(1), BR(1) ];
+air_elemental.normal = [ TL(3), BL(2), BL(3), F(3), F(4), BR(2), BR(3), TR(3) ];
+air_elemental.difficult = [ R(1), K(3), K(4) ];
+air_elemental.actions = (TARGET_LOCK + FOCUS + EVADE + BOOST);
+
+air_elemental.closing = [];
+air_elemental.closing[0] = [ BL(1), R(1), R(1), R(1), R(1), F(1), F(1), F(1), F(1), BR(1) ];
+air_elemental.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), TR(3) ];
+air_elemental.closing[2] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), K(4), K(4), K(3), K(3) ];
+air_elemental.closing[3] = [ BR(1), TR(3), TR(3), TR(3), K(4), K(4), K(4), K(3), K(3), K(3) ];
+air_elemental.closing[4] = [ TL(3), F(4), TR(3), K(3), K(3), K(3), K(4), K(4), K(4), K(4) ];
+air_elemental.closing[5] = [ BL(1), TL(3), TL(3), TL(3), K(4), K(4), K(4), K(3), K(3), K(3) ];
+air_elemental.closing[6] = [ TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), K(4), K(4), K(3), K(3) ];
+air_elemental.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(3) ];
+
+air_elemental.away = [];
+air_elemental.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+air_elemental.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(2), TR(3) ];
+air_elemental.away[2] = [ BR(2), BR(3), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+air_elemental.away[3] = [ TR(3), TR(3), TR(3), TR(3), TR(3), K(4), K(3), K(3), K(4), K(4) ];
+air_elemental.away[4] = [ TL(3), TR(3), TR(3), K(3), K(3), K(3), K(4), K(4), K(4), K(4) ];
+air_elemental.away[5] = [ TL(3), TL(3), TL(3), TL(3), TL(3), K(4), K(3), K(3), K(4), K(4) ];
+air_elemental.away[6] = [ BL(2), BL(3), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+air_elemental.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), BL(2), TL(3) ];
+
+air_elemental.far = [];
+air_elemental.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+air_elemental.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(3), TR(3) ];
+air_elemental.far[2] = [ BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+air_elemental.far[3] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), K(3), K(4) ];
+air_elemental.far[4] = [ TL(3), TL(3), TL(3), TR(3), TR(3), TR(3), K(3), K(3), K(4), K(4) ];
+air_elemental.far[5] = [ TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), K(3), K(4) ];
+air_elemental.far[6] = [ BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+air_elemental.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(3), TL(3) ];
+
+air_elemental.stressed = [];
+air_elemental.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
+air_elemental.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(3), TR(3) ];
+air_elemental.stressed[2] = [ BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+air_elemental.stressed[3] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+air_elemental.stressed[4] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TL(3), TL(3), TL(3), TR(3), TR(3) ];
+air_elemental.stressed[5] = [ TL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), TL(3), TL(3) ];
+air_elemental.stressed[6] = [ BL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), TL(3), TL(3) ];
+air_elemental.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3), TL(3) ];
+
 
 // ****************************************************************************
 // Black Shadow Dragon
@@ -532,4 +636,4 @@ ygd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3)
 // ****************************************************************************
 // Units
 
-var ships = [ abd, acd,  ard, griffon, harpy, sarpiel, shadow, wyvern, ybd, ygd]; 
+var ships = [ abd, acd,  ard, griffon, harpy, sarpiel, shadow, wyvern, ybd, ygd, ykd]; 
