@@ -369,6 +369,58 @@ griffon.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), 
 griffon.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
 griffon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(3) ];
 
+//****************************************************************************
+//  Griffon
+
+var vrock_demon = {};
+vrock_demon.name = "Vrock Demon";
+vrock_demon.image = "img/vrock_demon.png";
+vrock_demon.faction = "evil";
+vrock_demon.simple = [ F(1), F(2), BL(1), BR(1) ];
+vrock_demon.normal = [ BL(2), BR(2), TL(2), TR(2), TL(3), BL(3), F(3), F(4) , BR(3), TR(3) ];
+vrock_demon.difficult = [ W(3), TL(3), TR(3)];
+vrock_demon.actions = (TARGET   + CHARGE + DODGE);
+
+vrock_demon.closing = [];
+vrock_demon.closing[0] = [ BL(1), F(1), F(1), F(1), F(1), F(2), F(2), F(2), W(3), W(3) ];
+vrock_demon.closing[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+vrock_demon.closing[2] = [ TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3) ];
+vrock_demon.closing[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), W(3), W(3) ];
+vrock_demon.closing[4] = [ TL(3), F(4), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
+vrock_demon.closing[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), W(3), W(3) ];
+vrock_demon.closing[6] = [ TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3) ];
+vrock_demon.closing[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+  
+vrock_demon.away = [];
+vrock_demon.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+vrock_demon.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+vrock_demon.away[2] = [ BR(2), BR(3), BR(3), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3) ];
+vrock_demon.away[3] = [ TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3), W(3) ];
+vrock_demon.away[4] = [ TL(3), TR(3), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
+vrock_demon.away[5] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3), W(3) ];
+vrock_demon.away[6] = [ BL(2), BL(3), BL(3), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3) ];
+vrock_demon.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+
+vrock_demon.far = [];
+vrock_demon.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+vrock_demon.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+vrock_demon.far[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+vrock_demon.far[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+vrock_demon.far[4] = [ TL(2), TL(2), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3), W(3), W(3) ];
+vrock_demon.far[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+vrock_demon.far[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+vrock_demon.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+
+vrock_demon.stressed = [];
+vrock_demon.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
+vrock_demon.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(2) ];
+vrock_demon.stressed[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+vrock_demon.stressed[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+vrock_demon.stressed[4] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), TR(2) ];
+vrock_demon.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+vrock_demon.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+vrock_demon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2) ];
+
 // ****************************************************************************
 // Adult Copper Dragon 
 
@@ -472,6 +524,59 @@ sarpiel.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(2), TL(2), PRV(
 sarpiel.stressed[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
 sarpiel.stressed[6] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0) ];
 sarpiel.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2)  ];
+
+
+// ****************************************************************************
+// Earth Genasi
+
+var earth_genasi = {};
+earth_genasi.name = "Earth Genasi";
+earth_genasi.image = "img/earth_genasi.png";
+earth_genasi.faction = "neutral";
+earth_genasi.simple = [ F(1), F(2), BL(1), BR(1) ];
+earth_genasi.normal = [ PRV(0), PL(0), PR(0), PH(0), TR(1),BL(2), F(3),  BR(2),  TR(1) ];
+earth_genasi.difficult = [ R(1), W(2), TL(2), TR(2) ];
+earth_genasi.actions = (TARGET +  DODGE + CHARGE);
+
+earth_genasi.closing = [];
+earth_genasi.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+earth_genasi.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), PH(0) ];
+earth_genasi.closing[2] = [ TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0), W(3), W(3) ];
+earth_genasi.closing[3] = [ PR(0), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+earth_genasi.closing[4] = [ TL(1), F(4), TR(1), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
+earth_genasi.closing[5] = [ PL(0), TL(1), TL(1), TL(2), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+earth_genasi.closing[6] = [ TL(1), TL(1), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(3), W(3) ];
+earth_genasi.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(1) ];
+
+earth_genasi.away = [];
+earth_genasi.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(2), F(2) ];
+earth_genasi.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), PR(0), TR(2) ];
+earth_genasi.away[2] = [ PR(0), BR(2), BR(2), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+earth_genasi.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), W(2), W(2), PRV(0), PRV(0) ];
+earth_genasi.away[4] = [ TL(2), TR(2), TR(2), W(2), W(2), W(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+earth_genasi.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), W(2), W(2), PRV(0), PRV(0) ];
+earth_genasi.away[6] = [ PL(0), BL(2), BL(2), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+earth_genasi.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2) ];
+
+earth_genasi.far = [];
+earth_genasi.far[0] = [ BL(2), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), BR(2) ];
+earth_genasi.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+earth_genasi.far[2] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+earth_genasi.far[3] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), W(2), PRV(0) ];
+earth_genasi.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), W(2), W(2), PRV(0), PRV(0) ];
+earth_genasi.far[5] = [ PL(0), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), W(2), PRV(0)];
+earth_genasi.far[6] = [ PL(0), PL(0), TL(2), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+earth_genasi.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+
+earth_genasi.stressed = [];
+earth_genasi.stressed[0] = [ BL(1), BL(2), F(1), F(1), F(2), F(2), F(3), F(3), F(3), F(3) ];
+earth_genasi.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(1), TR(1) ];
+earth_genasi.stressed[2] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0) ];
+earth_genasi.stressed[3] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), PRV(0) ];
+earth_genasi.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(1), TL(1), PRV(0), TR(1), TR(1) ];
+earth_genasi.stressed[5] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PRV(0), PRV(0), PRV(0), PRV(0)  ];
+earth_genasi.stressed[6] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
+earth_genasi.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(1)  ];
 
 // ****************************************************************************
 // air_elemental
@@ -635,4 +740,4 @@ ygd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3)
 // ****************************************************************************
 // Units
 
-var creatures = [ abd, acd,  ard, griffon, harpy, sarpiel, shadow, wyvern, ybd, ygd, ykd, air_elemental]; 
+var creatures = [ abd, acd,  ard, griffon, harpy, sarpiel, shadow, wyvern, ybd, ygd, ykd, earth_genasi, air_elemental, vrock_demon]; 
