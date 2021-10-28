@@ -113,54 +113,54 @@ wyvern.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL
 // ****************************************************************************
 // Adult Blue Dragon
 
-var abd = {};
-abd.name = "Adult Blue Dragon";
-abd.image = "img/abd.png";
-abd.faction = "evil";
-abd.simple = [ F(1), F(2), BL(1), BR(1) ];
-abd.normal = [ BL(2), BR(2), TL(3), BL(3), F(3), BR(3), TR(3), F(4) ];
-abd.difficult = [ PRV(0), TL(2), TR(2) ];
-abd.actions = (TARGET  + CONCENTRATE + DODGE);
+var adult_blue_dragon = {};
+adult_blue_dragon.name = "Adult Blue Dragon";
+adult_blue_dragon.image = "img/abd.png";
+adult_blue_dragon.faction = "evil";
+adult_blue_dragon.simple = [ F(1), F(2), BL(1), BR(1) ];
+adult_blue_dragon.normal = [ BL(2), BR(2), TL(3), BL(3), F(3), BR(3), TR(3), F(4) ];
+adult_blue_dragon.difficult = [ PRV(0), TL(2), TR(2) ];
+adult_blue_dragon.actions = (TARGET  + CONCENTRATE + DODGE);
 
-abd.closing = [];
-abd.closing[0] = [ BL(1), F(1), F(1), F(1), F(1), F(2), F(2), F(2), W(4), W(4) ];
-abd.closing[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), TR(2), TR(2) ];
-abd.closing[2] = [ TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(4), W(4) ];
-abd.closing[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), W(4), W(4) ];
-abd.closing[4] = [ TL(3), F(4), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
-abd.closing[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), W(4), W(4) ];
-abd.closing[6] = [ TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(4), W(4) ];
-abd.closing[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+adult_blue_dragon.closing = [];
+adult_blue_dragon.closing[0] = [ BL(1), F(1), F(1), F(1), F(1), F(2), F(2), F(2), W(4), W(4) ];
+adult_blue_dragon.closing[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+adult_blue_dragon.closing[2] = [ TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(4), W(4) ];
+adult_blue_dragon.closing[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), W(4), W(4) ];
+adult_blue_dragon.closing[4] = [ TL(3), F(4), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
+adult_blue_dragon.closing[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), W(4), W(4) ];
+adult_blue_dragon.closing[6] = [ TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(4), W(4) ];
+adult_blue_dragon.closing[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), TL(2), TL(2) ];
 
-abd.away = [];
-abd.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
-abd.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
-abd.away[2] = [ BR(2), BR(3), BR(3), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3) ];
-abd.away[3] = [ TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(4), W(4), W(4) ];
-abd.away[4] = [ TL(3), TR(3), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
-abd.away[5] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(4), W(4), W(4) ];
-abd.away[6] = [ BL(2), BL(3), BL(3), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3) ];
-abd.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+adult_blue_dragon.away = [];
+adult_blue_dragon.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+adult_blue_dragon.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+adult_blue_dragon.away[2] = [ BR(2), BR(3), BR(3), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3) ];
+adult_blue_dragon.away[3] = [ TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(4), W(4), W(4) ];
+adult_blue_dragon.away[4] = [ TL(3), TR(3), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
+adult_blue_dragon.away[5] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(4), W(4), W(4) ];
+adult_blue_dragon.away[6] = [ BL(2), BL(3), BL(3), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3) ];
+adult_blue_dragon.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
 
-abd.far = [];
-abd.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
-abd.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
-abd.far[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-abd.far[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-abd.far[4] = [ TL(2), TL(2), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3), W(4), W(4) ];
-abd.far[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-abd.far[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-abd.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+adult_blue_dragon.far = [];
+adult_blue_dragon.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+adult_blue_dragon.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+adult_blue_dragon.far[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_blue_dragon.far[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_blue_dragon.far[4] = [ TL(2), TL(2), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3), W(4), W(4) ];
+adult_blue_dragon.far[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_blue_dragon.far[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_blue_dragon.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
 
-abd.stressed = [];
-abd.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
-abd.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(3) ];
-abd.stressed[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-abd.stressed[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-abd.stressed[4] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3) ];
-abd.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-abd.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-abd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(3) ];
+adult_blue_dragon.stressed = [];
+adult_blue_dragon.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
+adult_blue_dragon.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(3) ];
+adult_blue_dragon.stressed[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_blue_dragon.stressed[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_blue_dragon.stressed[4] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3) ];
+adult_blue_dragon.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_blue_dragon.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_blue_dragon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(3) ];
 // ****************************************************************************
 // Harpy  Copy for Young Blue Dragon
 
@@ -216,54 +216,54 @@ harpy.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(
 // ****************************************************************************
 //  Young Blue Dragon
 
-var ybd = {};
-ybd.name = "Young Blue Dragon";
-ybd.image = "img/ybd.png";
-ybd.faction = "evil";
-ybd.simple = [ F(1), F(2), BL(1), BR(1) ];
-ybd.normal = [ BL(2), BR(2), TL(2), TR(2), TL(3), BL(3), F(3), BR(3), TR(3) ];
-ybd.difficult = [ W(3), F(4) ];
-ybd.actions = (TARGET  + CONCENTRATE + DODGE);
+var young_blue_dragon = {};
+young_blue_dragon.name = "Young Blue Dragon";
+young_blue_dragon.image = "img/ybd.png";
+young_blue_dragon.faction = "evil";
+young_blue_dragon.simple = [ F(1), F(2), BL(1), BR(1) ];
+young_blue_dragon.normal = [ BL(2), BR(2), TL(2), TR(2), TL(3), BL(3), F(3), BR(3), TR(3) ];
+young_blue_dragon.difficult = [ W(3), F(4) ];
+young_blue_dragon.actions = (TARGET  + CONCENTRATE + DODGE);
 
-ybd.closing = [];
-ybd.closing[0] = [ BL(1), F(1), F(1), F(1), F(1), F(2), F(2), F(2), W(3), W(3) ];
-ybd.closing[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), TR(2), TR(2) ];
-ybd.closing[2] = [ TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3) ];
-ybd.closing[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), W(3), W(3) ];
-ybd.closing[4] = [ TL(3), F(4), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
-ybd.closing[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), W(3), W(3) ];
-ybd.closing[6] = [ TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3) ];
-ybd.closing[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+young_blue_dragon.closing = [];
+young_blue_dragon.closing[0] = [ BL(1), F(1), F(1), F(1), F(1), F(2), F(2), F(2), W(3), W(3) ];
+young_blue_dragon.closing[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+young_blue_dragon.closing[2] = [ TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3) ];
+young_blue_dragon.closing[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), W(3), W(3) ];
+young_blue_dragon.closing[4] = [ TL(3), F(4), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
+young_blue_dragon.closing[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), W(3), W(3) ];
+young_blue_dragon.closing[6] = [ TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3) ];
+young_blue_dragon.closing[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), TL(2), TL(2) ];
 
-ybd.away = [];
-ybd.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
-ybd.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
-ybd.away[2] = [ BR(2), BR(3), BR(3), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3) ];
-ybd.away[3] = [ TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3), W(3) ];
-ybd.away[4] = [ TL(3), TR(3), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
-ybd.away[5] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3), W(3) ];
-ybd.away[6] = [ BL(2), BL(3), BL(3), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3) ];
-ybd.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+young_blue_dragon.away = [];
+young_blue_dragon.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+young_blue_dragon.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+young_blue_dragon.away[2] = [ BR(2), BR(3), BR(3), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3) ];
+young_blue_dragon.away[3] = [ TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3), W(3) ];
+young_blue_dragon.away[4] = [ TL(3), TR(3), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
+young_blue_dragon.away[5] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3), W(3) ];
+young_blue_dragon.away[6] = [ BL(2), BL(3), BL(3), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3) ];
+young_blue_dragon.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
 
-ybd.far = [];
-ybd.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
-ybd.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
-ybd.far[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-ybd.far[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-ybd.far[4] = [ TL(2), TL(2), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3), W(3), W(3) ];
-ybd.far[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-ybd.far[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-ybd.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+young_blue_dragon.far = [];
+young_blue_dragon.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+young_blue_dragon.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+young_blue_dragon.far[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+young_blue_dragon.far[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+young_blue_dragon.far[4] = [ TL(2), TL(2), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3), W(3), W(3) ];
+young_blue_dragon.far[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+young_blue_dragon.far[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+young_blue_dragon.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
 
-ybd.stressed = [];
-ybd.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
-ybd.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(3) ];
-ybd.stressed[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-ybd.stressed[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-ybd.stressed[4] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3) ];
-ybd.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-ybd.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-ybd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(3) ];
+young_blue_dragon.stressed = [];
+young_blue_dragon.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
+young_blue_dragon.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(3) ];
+young_blue_dragon.stressed[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+young_blue_dragon.stressed[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+young_blue_dragon.stressed[4] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3) ];
+young_blue_dragon.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+young_blue_dragon.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+young_blue_dragon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(3) ];
 
 // ****************************************************************************
 //  Young Black Dragon
@@ -422,56 +422,108 @@ vrock_demon.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(
 vrock_demon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2) ];
 
 // ****************************************************************************
-// Adult Copper Dragon 
+// Adult Copper Dragon (Modify to make Ancient White Dragon)
 
-var acd = {};
-acd.name = "Adult Copper Dragon";
-acd.image = "img/acd.png";
-acd.faction = "good"; 
-acd.simple = [ BL(1), BR(1), F(2), F(3) ];
-acd.normal = [ TL(2), TL(3), BL(2), BL(3), F(4), BR(2), BR(3), TR(2), TR(3) ];
-acd.difficult = [ W(4), F(5) ];
-acd.actions = (TARGET + FEINT + CONCENTRATE + DODGE);
+var adult_copper_dragon = {};
+adult_copper_dragon.name = "Adult Copper Dragon";
+adult_copper_dragon.image = "img/acd.png";
+adult_copper_dragon.faction = "good"; 
+adult_copper_dragon.simple = [ BL(1), BR(1), F(2), F(3) ];
+adult_copper_dragon.normal = [ TL(2), TL(3), BL(2), BL(3), F(4), BR(2), BR(3), TR(2), TR(3) ];
+adult_copper_dragon.difficult = [ W(4), F(5) ];
+adult_copper_dragon.actions = (TARGET + FEINT + CONCENTRATE + DODGE);
 
-acd.closing = [];
-acd.closing[0] = [ BL(1), F(2), F(2), F(2), F(2), F(3), F(3), F(3), W(4), W(4) ];
-acd.closing[1] = [ F(2), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(3) ];
-acd.closing[2] = [ BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(4) ];
-acd.closing[3] = [ BR(1), BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(4) ];
-acd.closing[4] = [ TL(3), F(5), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
-acd.closing[5] = [ BL(1), BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(4) ];
-acd.closing[6] = [ BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(4) ];
-acd.closing[7] = [ F(2), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(3) ];
+adult_copper_dragon.closing = [];
+adult_copper_dragon.closing[0] = [ BL(1), F(2), F(2), F(2), F(2), F(3), F(3), F(3), W(4), W(4) ];
+adult_copper_dragon.closing[1] = [ F(2), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(3) ];
+adult_copper_dragon.closing[2] = [ BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(4) ];
+adult_copper_dragon.closing[3] = [ BR(1), BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(4) ];
+adult_copper_dragon.closing[4] = [ TL(3), F(5), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
+adult_copper_dragon.closing[5] = [ BL(1), BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(4) ];
+adult_copper_dragon.closing[6] = [ BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(4) ];
+adult_copper_dragon.closing[7] = [ F(2), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(3) ];
 
-acd.away = [];
-acd.away[0] = [ F(4), F(4), F(4), F(4), F(4), F(5), F(5), F(5), F(5), F(5) ];
-acd.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(3), TR(3) ];
-acd.away[2] = [ BR(2), BR(3), BR(3), BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-acd.away[3] = [ BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(4), W(4) ];
-acd.away[4] = [ TL(3), TR(3), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
-acd.away[5] = [ BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(4), W(4) ];
-acd.away[6] = [ BL(2), BL(3), BL(3), BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-acd.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(3), TL(3) ];
+adult_copper_dragon.away = [];
+adult_copper_dragon.away[0] = [ F(4), F(4), F(4), F(4), F(4), F(5), F(5), F(5), F(5), F(5) ];
+adult_copper_dragon.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(3), TR(3) ];
+adult_copper_dragon.away[2] = [ BR(2), BR(3), BR(3), BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_copper_dragon.away[3] = [ BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(4), W(4) ];
+adult_copper_dragon.away[4] = [ TL(3), TR(3), TR(3), W(4), W(4), W(4), W(4), W(4), W(4), W(4) ];
+adult_copper_dragon.away[5] = [ BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(4), W(4) ];
+adult_copper_dragon.away[6] = [ BL(2), BL(3), BL(3), BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_copper_dragon.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(3), TL(3) ];
 
-acd.far = [];
-acd.far[0] = [ BL(3), F(4), F(4), F(4), F(4), F(5), F(5), F(5), F(5), BR(3) ];
-acd.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(3), TR(3) ];
-acd.far[2] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-acd.far[3] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-acd.far[4] = [ BL(2), TL(3), TL(3), TL(3), BR(2), TR(3), TR(3), TR(3), W(4), W(4) ];
-acd.far[5] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-acd.far[6] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-acd.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(3), TL(3) ];
+adult_copper_dragon.far = [];
+adult_copper_dragon.far[0] = [ BL(3), F(4), F(4), F(4), F(4), F(5), F(5), F(5), F(5), BR(3) ];
+adult_copper_dragon.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(3), TR(3) ];
+adult_copper_dragon.far[2] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_copper_dragon.far[3] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_copper_dragon.far[4] = [ BL(2), TL(3), TL(3), TL(3), BR(2), TR(3), TR(3), TR(3), W(4), W(4) ];
+adult_copper_dragon.far[5] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_copper_dragon.far[6] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_copper_dragon.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(3), TL(3) ];
 
-acd.stressed = [];
-acd.stressed[0] = [ BL(1), BL(3), F(2), F(2), F(3), F(3), F(4), F(4), F(5), F(5) ];
-acd.stressed[1] = [ F(2), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(3), TR(3) ];
-acd.stressed[2] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-acd.stressed[3] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
-acd.stressed[4] = [ BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), BR(2), TR(3), TR(3), TR(3) ];
-acd.stressed[5] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-acd.stressed[6] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
-acd.stressed[7] = [ F(2), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), BL(3), TL(3) ];
+adult_copper_dragon.stressed = [];
+adult_copper_dragon.stressed[0] = [ BL(1), BL(3), F(2), F(2), F(3), F(3), F(4), F(4), F(5), F(5) ];
+adult_copper_dragon.stressed[1] = [ F(2), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(3), TR(3) ];
+adult_copper_dragon.stressed[2] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_copper_dragon.stressed[3] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_copper_dragon.stressed[4] = [ BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), BR(2), TR(3), TR(3), TR(3) ];
+adult_copper_dragon.stressed[5] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_copper_dragon.stressed[6] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_copper_dragon.stressed[7] = [ F(2), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), BL(3), TL(3) ];
+
+// ****************************************************************************
+// Ancient White Dragon
+
+var ancient_white_dragon = {};
+ancient_white_dragon.name = "Ancient White Dragon";
+ancient_white_dragon.image = "img/ancient_white_dragon.png";
+ancient_white_dragon.faction = "evil"; 
+ancient_white_dragon.simple = [ BL(1), BR(1), F(1), F(2)  ];
+ancient_white_dragon.normal = [  F(3), BL(2), BL(3), F(4), BR(2), BR(3), F(5)  ];
+ancient_white_dragon.difficult = [  BL(4), BR(4), TL(3), TR(3) ];
+ancient_white_dragon.actions = (TARGET + CHARGE + DODGE);
+
+ancient_white_dragon.closing = [];
+ancient_white_dragon.closing[0] = [ F(1), F(2), F(2), F(2), F(2), F(3), F(3), F(3), F(1), F(2) ];
+ancient_white_dragon.closing[1] = [ F(2), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(3) ];
+ancient_white_dragon.closing[2] = [ BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), BR(1), TR(3) ];
+ancient_white_dragon.closing[3] = [ BR(1), BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), BR(3), TR(3) ];
+ancient_white_dragon.closing[4] = [ TL(3), F(5), TR(3), TL(3),  TR(3), BL(3), BR(3), TR(3), TL(3),  TR(3), ];
+ancient_white_dragon.closing[5] = [ BL(1), BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), BL(3), TL(3) ];
+ancient_white_dragon.closing[6] = [ BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), BL(1), TL(3) ];
+ancient_white_dragon.closing[7] = [  F(2), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(3) ];
+
+ancient_white_dragon.away = [];
+ancient_white_dragon.away[0] = [ F(4), F(4), F(4), F(4), F(2), F(3), F(3), F(3), F(5), F(5) ];
+ancient_white_dragon.away[1] = [ BR(2), BR(2), BR(2), BR(4), BR(3), BR(3), BR(3), BR(4), TR(3), TR(3) ];
+ancient_white_dragon.away[2] = [ BR(2), BR(3), BR(3), BR(4), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+ancient_white_dragon.away[3] = [ BR(2), BR(2), TR(3), TR(3), TR(3), TR(3), TR(3), BR(3), TR(3), TR(3) ];
+ancient_white_dragon.away[4] = [ TL(3), TR(3), TL(3), TR(3),TL(3), TR(3),TL(3), TR(3),TL(3), TR(3) ];
+ancient_white_dragon.away[5] = [ BL(2), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3), BL(3), TL(3), TL(3)  ];
+ancient_white_dragon.away[6] = [ BL(2), BL(3), BL(3), BL(4), BL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+ancient_white_dragon.away[7] = [ BL(2), BL(2), BL(2), BL(4), BL(3), BL(3), BL(3), BL(4), TL(3), TL(3)  ];
+
+ancient_white_dragon.far = [];
+ancient_white_dragon.far[0] = [ BL(3), F(4), F(4), F(4), F(4), F(5), F(5), F(5), F(5), BR(3) ];
+ancient_white_dragon.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(3), TR(3) ];
+ancient_white_dragon.far[2] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+ancient_white_dragon.far[3] = [ BR(2), BR(2), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+ancient_white_dragon.far[4] = [ BL(2), TL(3), TL(3), TL(3), BR(2), TR(3), TR(3), TR(3), TL(3), TR(3) ];
+ancient_white_dragon.far[5] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+ancient_white_dragon.far[6] = [ BL(2), BL(2), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+ancient_white_dragon.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(3), TL(3) ];
+
+ancient_white_dragon.stressed = [];
+ancient_white_dragon.stressed[0] = [ BL(1), BL(3), F(2), F(2), F(3), F(3), F(4), F(4), F(5), F(5) ];
+ancient_white_dragon.stressed[1] = [ F(2), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3) ];
+ancient_white_dragon.stressed[2] = [ BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(3), BR(3), BR(3), BR(3) ];
+ancient_white_dragon.stressed[3] = [ BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(3), BR(3), BR(3), BR(3) ];
+ancient_white_dragon.stressed[4] = [ BL(2), BL(3), BL(3), BL(3), BL(3), BL(3), BR(2), BR(3), BR(3), BR(3) ];
+ancient_white_dragon.stressed[5] = [ BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3) ];
+ancient_white_dragon.stressed[6] = [ BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3) ];
+ancient_white_dragon.stressed[7] = [ F(2), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3) ];
 
 // ****************************************************************************
 // Sarpiel
@@ -527,25 +579,25 @@ sarpiel.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), T
 
 
 // ****************************************************************************
-// Earth Genasi
+// Earth Genasi  
 
 var earth_genasi = {};
 earth_genasi.name = "Earth Genasi";
 earth_genasi.image = "img/earth_genasi.png";
 earth_genasi.faction = "neutral";
 earth_genasi.simple = [ F(1), F(2), BL(1), BR(1) ];
-earth_genasi.normal = [ PRV(0), PL(0), PR(0), PH(0), TR(1),BL(2), F(3),  BR(2),  TR(1) ];
+earth_genasi.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(1),BL(2), F(3),  BR(2),  TR(1) ];
 earth_genasi.difficult = [ R(1), W(2), TL(2), TR(2) ];
 earth_genasi.actions = (TARGET +  DODGE + CHARGE);
 
 earth_genasi.closing = [];
 earth_genasi.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
 earth_genasi.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), PH(0) ];
-earth_genasi.closing[2] = [ TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0), W(3), W(3) ];
-earth_genasi.closing[3] = [ PR(0), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
-earth_genasi.closing[4] = [ TL(1), F(4), TR(1), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
-earth_genasi.closing[5] = [ PL(0), TL(1), TL(1), TL(2), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
-earth_genasi.closing[6] = [ TL(1), TL(1), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(3), W(3) ];
+earth_genasi.closing[2] = [ TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0), W(2), W(2) ];
+earth_genasi.closing[3] = [ PR(0), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), W(2), W(2), W(2) ];
+earth_genasi.closing[4] = [ TL(1), F(3), TR(1), W(2), W(2), W(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+earth_genasi.closing[5] = [ PL(0), TL(1), TL(1), TL(2), PRV(0), PRV(0), PRV(0), W(2), W(2), W(2) ];
+earth_genasi.closing[6] = [ TL(1), TL(1), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(2), W(2) ];
 earth_genasi.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(1) ];
 
 earth_genasi.away = [];
@@ -568,8 +620,9 @@ earth_genasi.far[5] = [ PL(0), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), 
 earth_genasi.far[6] = [ PL(0), PL(0), TL(2), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
 earth_genasi.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2), TL(2) ];
 
+
 earth_genasi.stressed = [];
-earth_genasi.stressed[0] = [ BL(1), BL(2), F(1), F(1), F(2), F(2), F(3), F(3), F(3), F(3) ];
+earth_genasi.stressed[0] = [ BL(1), BL(2), F(1), F(1), F(2), F(2), F(3), F(2), F(2), F(2) ];
 earth_genasi.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(1), TR(1) ];
 earth_genasi.stressed[2] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0) ];
 earth_genasi.stressed[3] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), PRV(0) ];
@@ -578,6 +631,115 @@ earth_genasi.stressed[5] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PRV(0), P
 earth_genasi.stressed[6] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
 earth_genasi.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(1)  ];
 
+
+// ****************************************************************************
+// Drider 
+
+var drider = {};
+drider.name = "Drider";
+drider.image = "img/drider.png";
+drider.faction = "evil";
+drider.simple = [ F(1), F(2), BL(1), BR(1) ];
+drider.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(2),BL(2), F(3),  BR(2),  TR(2), R(1) ];
+drider.difficult = [  W(2), ];
+drider.actions = (TARGET +  DODGE + FEINT + CONCENTRATE);
+
+drider.closing = [];
+drider.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+drider.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), PH(0) ];
+drider.closing[2] = [ TR(2), TR(2), TR(2), TR(2), PR(0), PR(0), PR(0), PR(0), W(2), W(2) ];
+drider.closing[3] = [ PR(0), TR(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), W(2), W(2), W(2) ];
+drider.closing[4] = [ TL(2), F(3), TR(2), W(2), W(2), W(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+drider.closing[5] = [ PL(0), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), W(2), W(2), W(2) ];
+drider.closing[6] = [ TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(2), W(2) ];
+drider.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(2) ];
+
+drider.away = [];
+drider.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(2), F(2) ];
+drider.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), PR(0), TR(2) ];
+drider.away[2] = [ PR(0), BR(2), BR(2), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+drider.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), W(2), W(2), PRV(0), PRV(0) ];
+drider.away[4] = [ TL(2), TR(2), TR(2), W(2), W(2), W(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+drider.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), W(2), W(2), PRV(0), PRV(0) ];
+drider.away[6] = [ PL(0), BL(2), BL(2), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+drider.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2) ];
+
+drider.far = [];
+drider.far[0] = [ BL(2), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), BR(2) ];
+drider.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+drider.far[2] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+drider.far[3] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), W(2), PRV(0) ];
+drider.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), W(2), W(2), PRV(0), PRV(0) ];
+drider.far[5] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), W(2), PRV(0)];
+drider.far[6] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+drider.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+
+
+drider.stressed = [];
+drider.stressed[0] = [ BL(1), BR(1), F(1), F(1), F(2), F(2), F(3), F(2), PH(0), R(1) ];
+drider.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+drider.stressed[2] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(2), PR(0), PR(0), PR(0), PR(0) ];
+drider.stressed[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+drider.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(2), TL(2), PRV(0), TR(2), TR(2) ];
+drider.stressed[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
+drider.stressed[6] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0) ];
+drider.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(2), TL(2)  ];
+
+
+// ****************************************************************************
+// Wood Elf Druid
+
+var wood_elf_druid = {};
+wood_elf_druid.name = "Wood Elf Druid";
+wood_elf_druid.image = "img/wood_elf_druid.png";
+wood_elf_druid.faction = "neutral";
+wood_elf_druid.simple = [ F(1), F(2), BL(1), BR(1) ];
+wood_elf_druid.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(1),BL(2),  BR(2),  TR(1), R(1), W(2), TL(2), TR(2)];
+wood_elf_druid.difficult = [ F(3) ];
+wood_elf_druid.actions = (TARGET +  DODGE + CONCENTRATE);
+
+wood_elf_druid.closing = [];
+wood_elf_druid.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+wood_elf_druid.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), PH(0) ];
+wood_elf_druid.closing[2] = [ TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0), W(2), W(2) ];
+wood_elf_druid.closing[3] = [ PR(0), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), W(2), W(2), W(2) ];
+wood_elf_druid.closing[4] = [ TL(1), F(3), TR(1), W(2), W(2), W(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+wood_elf_druid.closing[5] = [ PL(0), TL(1), TL(1), TL(2), PRV(0), PRV(0), PRV(0), W(2), W(2), W(2) ];
+wood_elf_druid.closing[6] = [ TL(1), TL(1), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(2), W(2) ];
+wood_elf_druid.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(1) ];
+
+wood_elf_druid.away = [];
+wood_elf_druid.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(2), F(2) ];
+wood_elf_druid.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), PR(0), TR(2) ];
+wood_elf_druid.away[2] = [ PR(0), BR(2), BR(2), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+wood_elf_druid.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), W(2), W(2), PRV(0), PRV(0) ];
+wood_elf_druid.away[4] = [ TL(2), TR(2), TR(2), W(2), W(2), W(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+wood_elf_druid.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), W(2), W(2), PRV(0), PRV(0) ];
+wood_elf_druid.away[6] = [ PL(0), BL(2), BL(2), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+wood_elf_druid.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2) ];
+
+wood_elf_druid.far = [];
+wood_elf_druid.far[0] = [ BL(2), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), BR(2) ];
+wood_elf_druid.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+wood_elf_druid.far[2] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+wood_elf_druid.far[3] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), W(2), PRV(0) ];
+wood_elf_druid.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), W(2), W(2), PRV(0), PRV(0) ];
+wood_elf_druid.far[5] = [ PL(0), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), W(2), PRV(0)];
+wood_elf_druid.far[6] = [ PL(0), PL(0), TL(2), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+wood_elf_druid.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+
+
+
+
+wood_elf_druid.stressed = [];
+wood_elf_druid.stressed[0] = [ PH(0), F(1), F(1), F(2), F(2), F(2), F(2), F(2), F(2), R(1) ];
+wood_elf_druid.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(1), TR(1) ];
+wood_elf_druid.stressed[2] = [ BR(1), TR(1), TR(2), TR(2), TR(1), TR(1), TR(2), PR(0), PR(0), PR(0) ];
+wood_elf_druid.stressed[3] = [ BR(1), TR(1), TR(1), TR(2), TR(2), W(2), W(2), W(2), PRV(0), PRV(0) ];
+wood_elf_druid.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(1), TL(1), PRV(0), TR(1), TR(1) ];
+wood_elf_druid.stressed[5] = [ BL(1), TL(1), TL(1), TL(2), TL(2), W(2), W(2), W(2), PRV(0), PRV(0)   ];
+wood_elf_druid.stressed[6] = [  BL(1), TL(1), TL(2), TL(2), TL(1), TL(1), TL(2), PL(0), PL(0), PL(0) ];
+wood_elf_druid.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(1)  ];
 // ****************************************************************************
 // air_elemental
 
@@ -682,6 +844,58 @@ shadow.stressed[5] = [ TL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), T
 shadow.stressed[6] = [ BL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), TL(3), TL(3) ];
 shadow.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3), TL(3) ];
 
+// ****************************************************************************
+// Adult Green Dragon
+
+var adult_green_dragon = {};
+adult_green_dragon.name = "Adult Green Dragon";
+adult_green_dragon.image = "img/adult_green_dragon.png";
+adult_green_dragon.faction = "evil";
+adult_green_dragon.simple = [ F(1), F(2), BL(1), BR(1) ];
+adult_green_dragon.normal = [ TL(3), BL(2), BL(3), F(3), F(4), BR(2), BR(3), TR(3) ];
+adult_green_dragon.difficult = [ R(1), W(3), W(4) ];
+adult_green_dragon.actions = (TARGET + CHARGE + DODGE + FEINT);
+
+adult_green_dragon.closing = [];
+adult_green_dragon.closing[0] = [ BL(1), R(1), R(1), R(1), R(1), F(1), F(1), F(1), F(1), BR(1) ];
+adult_green_dragon.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), TR(3) ];
+adult_green_dragon.closing[2] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(4), W(3), W(3) ];
+adult_green_dragon.closing[3] = [ BR(1), TR(3), TR(3), TR(3), W(4), W(4), W(4), W(3), W(3), W(3) ];
+adult_green_dragon.closing[4] = [ TL(3), F(4), TR(3), W(3), W(3), W(3), W(4), W(4), W(4), W(4) ];
+adult_green_dragon.closing[5] = [ BL(1), TL(3), TL(3), TL(3), W(4), W(4), W(4), W(3), W(3), W(3) ];
+adult_green_dragon.closing[6] = [ TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(4), W(3), W(3) ];
+adult_green_dragon.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(3) ];
+// Edit moves below
+adult_green_dragon.away = [];
+adult_green_dragon.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+adult_green_dragon.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(2), TR(3) ];
+adult_green_dragon.away[2] = [ BR(2), BR(3), BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_green_dragon.away[3] = [ TR(3), TR(3), TR(3), TR(3), TR(3), W(4), W(3), W(3), W(4), W(4) ];
+adult_green_dragon.away[4] = [ TL(3), TR(3), TR(3), W(3), W(3), W(3), W(4), W(4), W(4), W(4) ];
+adult_green_dragon.away[5] = [ TL(3), TL(3), TL(3), TL(3), TL(3), W(4), W(3), W(3), W(4), W(4) ];
+adult_green_dragon.away[6] = [ BL(2), BL(3), BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_green_dragon.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), BL(2), TL(3) ];
+
+adult_green_dragon.far = [];
+adult_green_dragon.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+adult_green_dragon.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(3), TR(3) ];
+adult_green_dragon.far[2] = [ BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_green_dragon.far[3] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), W(3), W(4) ];
+adult_green_dragon.far[4] = [ TL(3), TL(3), TL(3), TR(3), TR(3), TR(3), W(3), W(3), W(4), W(4) ];
+adult_green_dragon.far[5] = [ TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), W(3), W(4) ];
+adult_green_dragon.far[6] = [ BL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+adult_green_dragon.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(3), TL(3) ];
+
+adult_green_dragon.stressed = [];
+adult_green_dragon.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
+adult_green_dragon.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(3), TR(3) ];
+adult_green_dragon.stressed[2] = [ BR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_green_dragon.stressed[3] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+adult_green_dragon.stressed[4] = [ TR(3), TR(3), TR(3), TR(3), TR(3), TL(3), TL(3), TL(3), TR(3), TR(3) ];
+adult_green_dragon.stressed[5] = [ TL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), TL(3), TL(3) ];
+adult_green_dragon.stressed[6] = [ BL(3), TL(3), TL(3), TR(3), TL(3), TL(3), TL(3), TR(3), TL(3), TL(3) ];
+adult_green_dragon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3), TL(3) ];
+
 
 
 // ****************************************************************************
@@ -740,4 +954,8 @@ ygd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3)
 // ****************************************************************************
 // Units
 
-var creatures = [ abd, acd,  ard, griffon, harpy, sarpiel, shadow, wyvern, ybd, ygd, ykd, earth_genasi, air_elemental, vrock_demon]; 
+var creatures = [ adult_blue_dragon, adult_copper_dragon,  ancient_white_dragon, ard, adult_green_dragon,
+    
+    griffon, wood_elf_druid, drider,
+    
+    harpy, sarpiel, shadow, wyvern, young_blue_dragon, ygd, ykd, earth_genasi, air_elemental, vrock_demon]; 
