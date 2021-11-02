@@ -40,19 +40,26 @@ var RECOVER     = 0x4000;
 var REINFORCE   = 0x8000;
 
 // ACTIONS TEXT
-var TARGET_LOCK_TEXT =  'Obtain <img src="img/action_target_tp.png" alt="Target-Lock"> on targeted ship as a free action.<br>';
+var TARGET_LOCK_TEXT =  'Obtain <img src="img/action_target_tp.png" alt="Target-Lock" height="30px" width="30px"> on targeted creature as a free action.<br>';
 TARGET_LOCK_TEXT += "Clear Target at end of turn.";
 
-var BARREL_ROLL_TEXT1 = 'If this will put target into AI ship\'s firing arc choose <img src="img/action_feint.png" alt="Barrel Roll">';
-var BARREL_ROLL_TEXT2 = 'If this will put the AI ship out of firing enemy ship firing arc choose <img src="img/action_feint.png" alt="Barrel Roll">';
+var CRITICAL_TEXT = 'Use an action on a critical damage card to turn it face down. If more than one, use the first one received'
+var UPGRADE_TEXT = "Use an action on an upgrade to its advantage. If more than one, use the first one assigned, if it makes sense."
 
-var BOOST_TEXT1 = 'If this will target into AI ship\'s firing arc choose <img src="img/action_charge.png" alt="Boost">';
-var BOOST_TEXT2 = 'If this will put the AI ship out of firing enemy ship firing arc choose <img src="img/action_charge.png" alt="Boost">';
+var DISABLED_TEXT = "Remove a disabled token."
 
-var FOCUS_TEXT1 = 'If target is in a firing arc choose <img src="img/action_concentrate.png" alt="Focus">';
-var FOCUS_TEXT2 = 'Always use <img src="img/action_concentrate.png" alt="Focus">';
 
-var EVADE_TEXT = 'Else Choose <img src="img/action_dodge.png" alt="Evade">';
+
+var BARREL_ROLL_TEXT1 = 'If this will put target into AI creature\'s firing arc choose <img src="img/action_feint.png" alt="Barrel Roll"  height="30px" width="30px">';
+var BARREL_ROLL_TEXT2 = 'If this will put the AI creature out of firing enemy creature firing arc choose <img src="img/action_feint.png"  height="30px" width="30px" alt="Barrel Roll">';
+
+var BOOST_TEXT1 = 'If this will target into AI creature\'s firing arc choose <img src="img/action_charge.png"  height="30px" width="30px" alt="Boost">';
+var BOOST_TEXT2 = 'If this will put the AI creature out of firing enemy creature firing arc choose <img src="img/action_charge.png"  height="30px" width="30px" alt="Boost">';
+
+var FOCUS_TEXT1 = 'If target is in a firing arc choose <img src="img/action_concentrate.png"  height="30px" width="30px"  alt="Focus">';
+var FOCUS_TEXT2 = 'Always use <img src="img/action_concentrate.png"   height="30px" width="30px" alt="Focus">';
+
+var EVADE_TEXT = 'Else Choose <img src="img/action_dodge.png"  height="30px" width="30px" alt="Evade">';
 
 var CLOAKING_TEXT = 'Cloak/Decloak <img src="img/action_cloak.png" alt="Cloak">';          // TODO
 
@@ -194,10 +201,10 @@ function display_ship_choice( faction, funct )
 
     for( idx=0; idx < creatures.length; idx++ )
     {
-        // only add buttons for ships for the selected faction
+        // only add buttons for creatures for the selected faction
         if( creatures[idx].faction == faction )
         {
-            // run the selected function on the first faction ship found
+            // run the selected function on the first faction creature found
             if( shown == 0 )
             {
                 var fn = window[funct];
@@ -251,10 +258,10 @@ function gen_maneuver_table( name, table )
 
 function display_ship( ship_id )
 {
-    // Set the global to the selected ship
+    // Set the global to the selected creature
     SHIP = creatures[ ship_id ];
     if (SHIP === undefined ) {
-    	var error = "<div><p>Unable to get ship(" + ship_id + ")</div>";
+    	var error = "<div><p>Unable to get creature(" + ship_id + ")</div>";
     	document.getElementById( "table" ).innerHTML( error );
     	return;
     }
@@ -295,7 +302,7 @@ function set_ship( ship_id )
 
     set_version();
 
-    // Update index html elements for the selected ship
+    // Update index html elements for the selected creature
    	document.getElementById('ship_image').src = SHIP.image;
    	document.getElementById('ship_name').innerHTML = "<br>" + SHIP.name;
 
@@ -391,7 +398,9 @@ function format_actions( ship )
     {
         actions += "<li>" + TARGET_LOCK_TEXT + "</li>";
     }
-
+    actions += "<li>" + CRITICAL_TEXT + "</li>";
+    actions += "<li>" + UPGRADE_TEXT + "</li>";
+    actions += "<li>" + DISABLED_TEXT + "</li>";
     if( ship.actions & FEINT )
     {
         actions += "<li>" + BARREL_ROLL_TEXT1 + "</li>";
@@ -488,7 +497,7 @@ function movement( direction )
     selection += "at " + DIRECTION[direction] + " o'clock</p>";
     document.getElementById('selection').innerHTML = selection;
 
-    // Select the maneuver randonly from appropriate ship table
+    // Select the maneuver randonly from appropriate creature table
     maneuver = pick( SHIP.closing[direction] );
     formatted = format_maneuver( SHIP, maneuver );
     document.getElementById( "closing_num" ).innerHTML = formatted.num;

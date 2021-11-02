@@ -119,7 +119,7 @@ adult_blue_dragon.image = "img/abd.png";
 adult_blue_dragon.faction = "evil";
 adult_blue_dragon.simple = [ F(1), F(2), BL(1), BR(1) ];
 adult_blue_dragon.normal = [ BL(2), BR(2), TL(3), BL(3), F(3), BR(3), TR(3), F(4) ];
-adult_blue_dragon.difficult = [ PRV(0), TL(2), TR(2) ];
+adult_blue_dragon.difficult = [ W(4), TL(2), TR(2) ];
 adult_blue_dragon.actions = (TARGET  + CONCENTRATE + DODGE);
 
 adult_blue_dragon.closing = [];
@@ -370,14 +370,14 @@ griffon.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), 
 griffon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(3) ];
 
 //****************************************************************************
-//  Griffon
+//  Vrock Demon
 
 var vrock_demon = {};
 vrock_demon.name = "Vrock Demon";
 vrock_demon.image = "img/vrock_demon.png";
 vrock_demon.faction = "evil";
 vrock_demon.simple = [ F(1), F(2), BL(1), BR(1) ];
-vrock_demon.normal = [ BL(2), BR(2), TL(2), TR(2), TL(3), BL(3), F(3), F(4) , BR(3), TR(3) ];
+vrock_demon.normal = [ BL(2), BR(2), TL(2), TR(2),  BL(3), F(3), F(4) , BR(3) ];
 vrock_demon.difficult = [ W(3), TL(3), TR(3)];
 vrock_demon.actions = (TARGET   + CHARGE + DODGE);
 
@@ -420,6 +420,57 @@ vrock_demon.stressed[4] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TR(2), TR(
 vrock_demon.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
 vrock_demon.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
 vrock_demon.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2) ];
+//****************************************************************************
+//  Gargoyle
+
+var gargoyle = {};
+gargoyle.name = "Gargoyle";
+gargoyle.image = "img/gargoyle.png";
+gargoyle.faction = "evil";
+gargoyle.simple = [ F(1), F(2), BL(1), BR(1) ];
+gargoyle.normal = [ BL(2), BR(2), TL(2), TR(2),  BL(3), F(3), F(4) , BR(3) ];
+gargoyle.difficult = [ W(3), TL(3), TR(3)];
+gargoyle.actions = (TARGET   + CONCENTRATE + DODGE);
+
+gargoyle.closing = [];
+gargoyle.closing[0] = [ BL(1), F(1), F(1), F(1), F(1), F(2), F(2), F(2), W(3), W(3) ];
+gargoyle.closing[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+gargoyle.closing[2] = [ TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3) ];
+gargoyle.closing[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), W(3), W(3) ];
+gargoyle.closing[4] = [ TL(3), F(4), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
+gargoyle.closing[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), W(3), W(3) ];
+gargoyle.closing[6] = [ TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3) ];
+gargoyle.closing[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+  
+gargoyle.away = [];
+gargoyle.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+gargoyle.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+gargoyle.away[2] = [ BR(2), BR(3), BR(3), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3) ];
+gargoyle.away[3] = [ TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), W(3), W(3), W(3) ];
+gargoyle.away[4] = [ TL(3), TR(3), TR(3), W(3), W(3), W(3), W(3), W(3), W(3), W(3) ];
+gargoyle.away[5] = [ TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), W(3), W(3), W(3) ];
+gargoyle.away[6] = [ BL(2), BL(3), BL(3), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3) ];
+gargoyle.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+
+gargoyle.far = [];
+gargoyle.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+gargoyle.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(3) ];
+gargoyle.far[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+gargoyle.far[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(3), TR(3), TR(3), TR(3), TR(3) ];
+gargoyle.far[4] = [ TL(2), TL(2), TL(3), TL(3), TR(2), TR(2), TR(3), TR(3), W(3), W(3) ];
+gargoyle.far[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+gargoyle.far[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(3), TL(3), TL(3), TL(3), TL(3) ];
+gargoyle.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(3) ];
+
+gargoyle.stressed = [];
+gargoyle.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
+gargoyle.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(2) ];
+gargoyle.stressed[2] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+gargoyle.stressed[3] = [ TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+gargoyle.stressed[4] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), TR(2) ];
+gargoyle.stressed[5] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+gargoyle.stressed[6] = [ TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+gargoyle.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2) ];
 
 // ****************************************************************************
 // Adult Copper Dragon (Modify to make Ancient White Dragon)
@@ -576,6 +627,57 @@ sarpiel.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(2), TL(2), PRV(
 sarpiel.stressed[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
 sarpiel.stressed[6] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0) ];
 sarpiel.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2)  ];
+// ****************************************************************************
+// Nightmare
+
+var nightmare = {};
+nightmare.name = "Nightmare";
+nightmare.image = "img/nightmare.png";
+nightmare.faction = "evil";
+nightmare.simple = [ F(1), F(2), BL(1), BR(1) ];
+nightmare.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(2), BL(2), BL(3), F(3), F(4), BR(2), BR(3), TR(2) ];
+nightmare.difficult = [ R(1), W(3) ];
+nightmare.actions = (FEINT  + DODGE + CHARGE);
+
+nightmare.closing = [];
+nightmare.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+nightmare.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), TR(2) ];
+nightmare.closing[2] = [ TR(2), TR(2), TR(2), TR(2), PR(0), PR(0), PR(0), PR(0), W(3), W(3) ];
+nightmare.closing[3] = [ PR(0), TR(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+nightmare.closing[4] = [ TL(2), F(4), TR(2), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
+nightmare.closing[5] = [ PL(0), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+nightmare.closing[6] = [ TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(3), W(3) ];
+nightmare.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(2) ];
+
+nightmare.away = [];
+nightmare.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+nightmare.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(2), TR(2) ];
+nightmare.away[2] = [ PR(0), BR(3), BR(3), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+nightmare.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), W(3), W(3), PRV(0), PRV(0) ];
+nightmare.away[4] = [ TL(2), TR(2), TR(2), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
+nightmare.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), W(3), W(3), PRV(0), PRV(0) ];
+nightmare.away[6] = [ PL(0), BL(3), BL(3), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+nightmare.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), BL(2), TL(2) ];
+
+nightmare.far = [];
+nightmare.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+nightmare.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(2) ];
+nightmare.far[2] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+nightmare.far[3] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), W(3), PRV(0) ];
+nightmare.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), W(3), W(3), PRV(0), PRV(0) ];
+nightmare.far[5] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), W(3), PRV(0)];
+nightmare.far[6] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+nightmare.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(2) ];
+
+nightmare.stressed = [];
+nightmare.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(4), F(4) ];
+nightmare.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(2) ];
+nightmare.stressed[2] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(2), PR(0), PR(0), PR(0), PR(0) ];
+nightmare.stressed[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+nightmare.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(2), TL(2), PRV(0), TR(2), TR(2) ];
+nightmare.stressed[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
+nightmare.stressed[6] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0) ];
+nightmare.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2)  ];
 
 
 // ****************************************************************************
@@ -630,6 +732,60 @@ earth_genasi.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(1), TL(1),
 earth_genasi.stressed[5] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PRV(0), PRV(0), PRV(0), PRV(0)  ];
 earth_genasi.stressed[6] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
 earth_genasi.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(1)  ];
+
+
+// ****************************************************************************
+// Human Barbarian (Fire Cult)
+
+var human_barbarian = {};
+human_barbarian.name = "Human Barbarian";
+human_barbarian.image = "img/human_barbarian.png";
+human_barbarian.faction = "evil";
+human_barbarian.simple = [ F(1), F(2), BL(1), BR(1) ];
+human_barbarian.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(1),BL(2),   BR(2),  TR(1) ];
+human_barbarian.difficult = [ R(1), F(3), TL(2), TR(2) ];
+human_barbarian.actions = (TARGET +  DODGE + CHARGE);
+
+human_barbarian.closing = [];
+human_barbarian.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+human_barbarian.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), PH(0) ];
+human_barbarian.closing[2] = [ TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0), PRV(0), PRV(0) ];
+human_barbarian.closing[3] = [ PR(0), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.closing[4] = [ TL(1), F(3), TR(1), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.closing[5] = [ PL(0), TL(1), TL(1), TL(2), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.closing[6] = [ TL(1), TL(1), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), PRV(0), PRV(0) ];
+human_barbarian.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(1) ];
+
+human_barbarian.away = [];
+human_barbarian.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(2), F(2) ];
+human_barbarian.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), PR(0), TR(2) ];
+human_barbarian.away[2] = [ PR(0), BR(2), BR(2), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+human_barbarian.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.away[4] = [ TL(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.away[6] = [ PL(0), BL(2), BL(2), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+human_barbarian.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2) ];
+
+human_barbarian.far = [];
+human_barbarian.far[0] = [ BL(2), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), BR(2) ];
+human_barbarian.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+human_barbarian.far[2] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+human_barbarian.far[3] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), PRV(0), PRV(0) ];
+human_barbarian.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.far[5] = [ PL(0), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PRV(0), PRV(0)];
+human_barbarian.far[6] = [ PL(0), PL(0), TL(2), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+human_barbarian.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+
+
+human_barbarian.stressed = [];
+human_barbarian.stressed[0] = [ BL(1), BL(2), F(1), F(1), F(2), F(2), F(2), F(2), F(2), F(2) ];
+human_barbarian.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(1), TR(1) ];
+human_barbarian.stressed[2] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0) ];
+human_barbarian.stressed[3] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), PRV(0) ];
+human_barbarian.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(1), TL(1), PRV(0), TR(1), TR(1) ];
+human_barbarian.stressed[5] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PRV(0), PRV(0), PRV(0), PRV(0)  ];
+human_barbarian.stressed[6] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
+human_barbarian.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(1)  ];
 
 
 // ****************************************************************************
@@ -956,6 +1112,6 @@ ygd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3)
 
 var creatures = [ adult_blue_dragon, adult_copper_dragon,  ancient_white_dragon, ard, adult_green_dragon,
     
-    griffon, wood_elf_druid, drider,
+    griffon, wood_elf_druid, drider, nightmare, gargoyle, human_barbarian,
     
     harpy, sarpiel, shadow, wyvern, young_blue_dragon, ygd, ykd, earth_genasi, air_elemental, vrock_demon]; 
