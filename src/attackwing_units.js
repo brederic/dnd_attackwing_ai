@@ -430,7 +430,7 @@ gargoyle.faction = "evil";
 gargoyle.simple = [ F(1), F(2), BL(1), BR(1) ];
 gargoyle.normal = [ BL(2), BR(2), TL(2), TR(2),  BL(3), F(3), F(4) , BR(3) ];
 gargoyle.difficult = [ W(3), TL(3), TR(3)];
-gargoyle.actions = (TARGET   + CONCENTRATE + DODGE);
+gargoyle.actions = (CHARGE + CONCENTRATE + DODGE);
 
 gargoyle.closing = [];
 gargoyle.closing[0] = [ BL(1), F(1), F(1), F(1), F(1), F(2), F(2), F(2), W(3), W(3) ];
