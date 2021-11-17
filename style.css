@@ -11,7 +11,13 @@ body
 	color: black;
 }
 
+div#planning-text {
 
+
+
+	float: left;
+
+  }
 /*****************************************************************************/
 /* Header Section */
 
@@ -200,7 +206,7 @@ img.ship_button
 
 #results
 {
-	display: table-cell;
+	display: grid;
 	padding-left: 25px;
 	font-size: large;
 	font-weight: bold;
@@ -282,3 +288,7 @@ td.ship_cell
 	width: 100px;
 }
 
+.results
+{
+	display: grid;
+}
