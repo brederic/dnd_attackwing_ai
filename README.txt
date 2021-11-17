@@ -1,7 +1,7 @@
 ==========================================
    DnD Attack Wing: Unit AI
 
-                  v0.5.1
+                  v0.5.5
 ==========================================
 
 -------------------
@@ -31,6 +31,10 @@ Click the "?" button for detailed instruction on using the application
 --------------
 Change History
 --------------
+11/17/2021  0.5.5 Added AI support for Water Cultist, Ogre Mage and Half-Black Dragon Warrior;  Improved word-wrap in AI results panel
+11/02/2021  0.5.4 Added AI support for Nightmare, Gargoyle and Human Barbarian; Fixed adult blue dragon AI; Added more detailed AI instructions
+10/28/2021  0.5.3 Added AI support for Adult Green Dragon, Ancient White Dragon, Wood Elf Druid, and Drider; Fixed bug in Earth Genesi AI
+10/20/2021  0.5.2 Added AI support for Young Black Dragon, Air Elemental, Earth Genesi, and Vrock Demon; Added support for pivot maneuvers; updated Deva Angel AI to use pivot maneuvers
 02/25/2020  0.5.1	Removed all references to Star Wars and Fantasy Flight
 02/25/2020	0.5.0	Added legal text; cleaned up files and initial commit to github
 02/23/2020  0.4.0	Added units: Chuth, Ulharos, Borion; improved UI
