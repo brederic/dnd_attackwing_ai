@@ -730,6 +730,57 @@ nightmare.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(2), TL(2), PR
 nightmare.stressed[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
 nightmare.stressed[6] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0) ];
 nightmare.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2)  ];
+// ****************************************************************************
+// Frost Giant
+
+var frost_giant = {};
+frost_giant.name = "Frost Giant";
+frost_giant.image = "img/frost_giant.png";
+frost_giant.faction = "evil";
+frost_giant.simple = [ F(1), F(2), BL(1), BR(1) ];
+frost_giant.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(2), BL(2), BL(3), F(3),  BR(2), BR(3), TR(2) ];
+frost_giant.difficult = [ R(1), F(4), W(3) ];
+frost_giant.actions = (CHARGE  + TARGET + CONCENTRATE);
+
+frost_giant.closing = [];
+frost_giant.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+frost_giant.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), TR(2) ];
+frost_giant.closing[2] = [ TR(2), TR(2), TR(2), TR(2), PR(0), PR(0), PR(0), PR(0), W(3), W(3) ];
+frost_giant.closing[3] = [ PR(0), TR(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+frost_giant.closing[4] = [ TL(2), F(4), TR(2), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
+frost_giant.closing[5] = [ PL(0), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+frost_giant.closing[6] = [ TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(3), W(3) ];
+frost_giant.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(2) ];
+
+frost_giant.away = [];
+frost_giant.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), F(4) ];
+frost_giant.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), BR(2), TR(2) ];
+frost_giant.away[2] = [ PR(0), BR(3), BR(3), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+frost_giant.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), W(3), W(3), PRV(0), PRV(0) ];
+frost_giant.away[4] = [ TL(2), TR(2), TR(2), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
+frost_giant.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), W(3), W(3), PRV(0), PRV(0) ];
+frost_giant.away[6] = [ PL(0), BL(3), BL(3), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+frost_giant.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), BL(2), TL(2) ];
+
+frost_giant.far = [];
+frost_giant.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(4), F(4), F(4), F(4), BR(3) ];
+frost_giant.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(3), BR(3), BR(3), BR(3), TR(2), TR(2) ];
+frost_giant.far[2] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+frost_giant.far[3] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), W(3), PRV(0) ];
+frost_giant.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), W(3), W(3), PRV(0), PRV(0) ];
+frost_giant.far[5] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), W(3), PRV(0)];
+frost_giant.far[6] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+frost_giant.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(3), BL(3), BL(3), BL(3), TL(2), TL(2) ];
+
+frost_giant.stressed = [];
+frost_giant.stressed[0] = [ BL(1), BL(3), F(1), F(1), F(2), F(2), F(3), F(3), F(3), F(3) ];
+frost_giant.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(3), BR(3), TR(2), TR(2) ];
+frost_giant.stressed[2] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(2), PR(0), PR(0), PR(0), PR(0) ];
+frost_giant.stressed[3] = [ BR(1), TR(2), TR(2), TR(2), TR(2), TR(2), PRV(0), PRV(0), PRV(0), PRV(0) ];
+frost_giant.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(2), TL(2), PRV(0), TR(2), TR(2) ];
+frost_giant.stressed[5] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
+frost_giant.stressed[6] = [ BL(1), TL(2), TL(2), TL(2), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0) ];
+frost_giant.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(2), TL(2)  ];
 
 
 // ****************************************************************************
@@ -787,7 +838,7 @@ earth_genasi.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(
 
 
 // ****************************************************************************
-// Half-Black Dragon Fighter 
+// Dwarven Ballista
 
 var half_dragon_fighter = {};
 half_dragon_fighter.name = "Half-Black Dragon Fighter";
@@ -838,6 +889,61 @@ half_dragon_fighter.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(1),
 half_dragon_fighter.stressed[5] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PRV(0), PRV(0), PRV(0), PRV(0)  ];
 half_dragon_fighter.stressed[6] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
 half_dragon_fighter.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(1)  ];
+
+
+
+// ****************************************************************************
+// Half-Dragon Fighter
+
+var dwarven_ballista = {};
+dwarven_ballista.name = "Dwarven Ballista";
+dwarven_ballista.image = "img/dwarven_ballista.png";
+dwarven_ballista.faction = "neutral";
+dwarven_ballista.simple = [ F(1),  ];
+dwarven_ballista.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(1),BL(1), BR(1),  TR(1) ];
+dwarven_ballista.difficult = [ R(1), W(1), TL(2), TR(2), F(2), BL(2),   BR(2), ];
+dwarven_ballista.actions = (TARGET +  CONCENTRATE);
+
+dwarven_ballista.closing = [];
+dwarven_ballista.closing[0] = [ PH(0), R(1), R(1), R(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+dwarven_ballista.closing[1] = [ R(1), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), PH(0) ];
+dwarven_ballista.closing[2] = [ TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0), W(1), W(1) ];
+dwarven_ballista.closing[3] = [ PR(0), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), W(1), W(1), W(1) ];
+dwarven_ballista.closing[4] = [ TL(1), F(2), TR(1), W(1), W(1), W(1), PRV(0), PRV(0), PRV(0), PRV(0) ];
+dwarven_ballista.closing[5] = [ PL(0), TL(1), TL(1), TL(2), PRV(0), PRV(0), PRV(0), W(1), W(1), W(1) ];
+dwarven_ballista.closing[6] = [ TL(1), TL(1), TL(2), TL(2), PL(0), PL(0), PL(0), PL(0), W(1), W(1) ];
+dwarven_ballista.closing[7] = [ R(1), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(1) ];
+
+dwarven_ballista.away = [];
+dwarven_ballista.away[0] = [ F(2), F(2), F(2), F(2), F(2), F(2), F(2), F(2), F(2), F(2) ];
+dwarven_ballista.away[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), PR(0), TR(2) ];
+dwarven_ballista.away[2] = [ PR(0), BR(2), BR(2), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+dwarven_ballista.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), W(1), W(1), PRV(0), PRV(0) ];
+dwarven_ballista.away[4] = [ TL(2), TR(2), TR(2), W(1), W(1), W(1), PRV(0), PRV(0), PRV(0), PRV(0) ];
+dwarven_ballista.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), W(1), W(1), PRV(0), PRV(0) ];
+dwarven_ballista.away[6] = [ PL(0), BL(2), BL(2), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+dwarven_ballista.away[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2) ];
+
+dwarven_ballista.far = [];
+dwarven_ballista.far[0] = [ BL(2), F(2), F(2), F(2), F(2), F(2), F(2), F(2), F(2), BR(2) ];
+dwarven_ballista.far[1] = [ BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), BR(2), TR(2), TR(2) ];
+dwarven_ballista.far[2] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+dwarven_ballista.far[3] = [ PR(0), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2), W(1), PRV(0) ];
+dwarven_ballista.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), W(1), W(1), PRV(0), PRV(0) ];
+dwarven_ballista.far[5] = [ PL(0), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), W(1), PRV(0)];
+dwarven_ballista.far[6] = [ PL(0), PL(0), TL(2), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+dwarven_ballista.far[7] = [ BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), BL(2), TL(2), TL(2) ];
+
+
+dwarven_ballista.stressed = [];
+dwarven_ballista.stressed[0] = [ BL(1), BL(1), F(1), F(1), F(1), F(1), F(1), F(1), F(1), F(1) ];
+dwarven_ballista.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(1), BR(1), BR(1), BR(1), TR(1), TR(1) ];
+dwarven_ballista.stressed[2] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PR(0), PR(0), PR(0), PR(0) ];
+dwarven_ballista.stressed[3] = [ BR(1), TR(1), TR(1), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), PRV(0) ];
+dwarven_ballista.stressed[4] = [ F(1), PRV(0), PRV(0), PRV(0), PRV(0), TL(1), TL(1), PRV(0), TR(1), TR(1) ];
+dwarven_ballista.stressed[5] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PRV(0), PRV(0), PRV(0), PRV(0)  ];
+dwarven_ballista.stressed[6] = [ BL(1), TL(1), TL(1), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
+dwarven_ballista.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(1), BL(1), BL(1), BL(1), TL(1), TL(1)  ];
 
 
 // ****************************************************************************
@@ -1000,6 +1106,59 @@ water_cult_warrior.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(1), 
 water_cult_warrior.stressed[5] = [ BL(1), TL(1), TL(1), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
 water_cult_warrior.stressed[6] = [ BL(1), TL(2), TL(2), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
 water_cult_warrior.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(2)  ];
+
+// ****************************************************************************
+// Hobgoblin Troop 
+
+var hobgoblin_troop = {};
+hobgoblin_troop.name = "Hobgoblin Troop";
+hobgoblin_troop.image = "img/hobgoblin_troop.png";
+hobgoblin_troop.faction = "evil";
+hobgoblin_troop.simple = [ F(1), BL(1), BR(1) ];
+hobgoblin_troop.normal = [ PRV(0), PL(0), PR(0), PH(0), TL(2),BL(2), F(3),  F(2), BR(2),  TR(2), TL(1), TR(1) ];
+hobgoblin_troop.difficult = [  W(3), BR(3), BL(3) ];
+hobgoblin_troop.actions = ( DODGE + CHARGE + CONCENTRATE);
+
+hobgoblin_troop.closing = [];
+hobgoblin_troop.closing[0] = [ PH(0),PH(0),PH(0), F(1), PH(0), PH(0), F(1), F(1), F(1), PH(0) ];
+hobgoblin_troop.closing[1] = [PH(0), F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(1), PH(0) ];
+hobgoblin_troop.closing[2] = [ TR(1), TR(1), TR(1), TR(2), PR(0), PR(0), PR(0), PR(0), W(3), W(3) ];
+hobgoblin_troop.closing[3] = [ PR(0), TR(1), TR(1), TR(1), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+hobgoblin_troop.closing[4] = [ TL(1), F(3), TR(1), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
+hobgoblin_troop.closing[5] = [ PL(0), TL(1), TL(1), TL(1), PRV(0), PRV(0), PRV(0), W(3), W(3), W(3) ];
+hobgoblin_troop.closing[6] = [ TL(1), TL(1), TL(1), TL(2), PL(0), PL(0), PL(0), PL(0), W(3), W(3) ];
+hobgoblin_troop.closing[7] = [PH(0), F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(1), TL(1) ];
+
+hobgoblin_troop.away = [];
+hobgoblin_troop.away[0] = [ F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(2), F(2) ];
+hobgoblin_troop.away[1] = [ BR(3), BR(3), BR(3), BR(3), BR(2), BR(2), BR(2), BR(2), PR(0), TR(2) ];
+hobgoblin_troop.away[2] = [ PR(0), BR(3), BR(2), PR(0), TR(1), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+hobgoblin_troop.away[3] = [ TR(2), TR(2), PR(0), PR(0), PR(0), PRV(0), W(3), W(3), PRV(0), PRV(0) ];
+hobgoblin_troop.away[4] = [ TL(2), TR(2), TR(2), W(3), W(3), W(3), PRV(0), PRV(0), PRV(0), PRV(0) ];
+hobgoblin_troop.away[5] = [ TL(2), TL(2), PL(0), PL(0), PL(0), PRV(0), W(3), W(3), PRV(0), PRV(0) ];
+hobgoblin_troop.away[6] = [ PL(0), BL(3), BL(2), PL(0), TL(1), TL(2), TL(2), TL(2), TL(2), TL(2)  ];
+hobgoblin_troop.away[7] = [ BL(3), BL(3), BL(3), BL(3), BL(2), BL(2), BL(2), BL(2), BL(3), TL(2) ];
+
+hobgoblin_troop.far = [];
+hobgoblin_troop.far[0] = [ BL(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), F(3), BR(3) ];
+hobgoblin_troop.far[1] = [ BR(3), BR(3), BR(3), BR(3), BR(3), BR(3), BR(3), BR(2), TR(2), TR(2) ];
+hobgoblin_troop.far[2] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2) ];
+hobgoblin_troop.far[3] = [ PR(0), PR(0), TR(2), TR(2), TR(2), TR(2), TR(2), TR(2), W(3), PRV(0) ];
+hobgoblin_troop.far[4] = [ TL(2), TL(2), TL(2), TR(2), TR(2), TR(2), W(3), W(3), PRV(0), PRV(0) ];
+hobgoblin_troop.far[5] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), W(3), PRV(0)];
+hobgoblin_troop.far[6] = [ PL(0), PL(0), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2), TL(2) ];
+hobgoblin_troop.far[7] = [ BL(3), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3), BL(3), TL(2), TL(2) ];
+
+
+hobgoblin_troop.stressed = [];
+hobgoblin_troop.stressed[0] = [ BL(1), BR(1), F(1), F(1), F(2), F(2), F(3), F(2), PH(0), PH(0) ];
+hobgoblin_troop.stressed[1] = [ F(1), BR(1), BR(1), BR(1), BR(2), BR(2), BR(2), BR(2), TR(1), TR(2) ];
+hobgoblin_troop.stressed[2] = [ BR(1), TR(1), TR(1), TR(1), TR(2), TR(2), PR(0), PR(0), PR(0), PR(0) ];
+hobgoblin_troop.stressed[3] = [ BR(1), TR(2), TR(2), TR(2), TR(1), TR(1), PRV(0), PRV(0), PRV(0), PRV(0) ];
+hobgoblin_troop.stressed[4] = [ F(2), PRV(0), PRV(0), PRV(0), PRV(0), TL(1), TL(2), PRV(0), TR(1), TR(1) ];
+hobgoblin_troop.stressed[5] = [ BL(1), TL(1), TL(1), TL(2), TL(2), TL(2), PRV(0), PRV(0), PRV(0), PRV(0)  ];
+hobgoblin_troop.stressed[6] = [ BL(1), TL(2), TL(2), TL(1), TL(1), TL(1), PL(0), PL(0), PL(0), PL(0) ];
+hobgoblin_troop.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(2), BL(2), TL(1), TL(2)  ];
 
 
 // ****************************************************************************
@@ -1273,6 +1432,6 @@ ygd.stressed[7] = [ F(1), BL(1), BL(1), BL(1), BL(2), BL(2), BL(3), BL(3), TL(3)
 var creatures = [ adult_blue_dragon, adult_copper_dragon,  ancient_white_dragon, ard, adult_green_dragon,
     
     griffon, wood_elf_druid, drider, nightmare, gargoyle, human_barbarian, half_dragon_fighter, ogre_mage,
-    water_cult_warrior,
+    water_cult_warrior, dwarven_ballista, frost_giant, hobgoblin_troop,
     
     harpy, sarpiel, shadow, wyvern, young_blue_dragon, ygd, ykd, earth_genasi, air_elemental, vrock_demon]; 
